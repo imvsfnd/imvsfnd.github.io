@@ -1,0 +1,23 @@
+//- head.pug
+meta(charset="UTF-8")
+meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+meta(name='description', content='Learning Notes')
+meta(name='keywords', content='Learning Notes')
+link(rel='shortcut icon', href='../../CStyle/common/imgs/favicon/favicon.ico', type='image/x-icon')
+link(href='../../CStyle/common/vendor/normalize.css', rel='stylesheet', type='text/css')
+	
+mixin lnkCss(href)
+	link(href="CStyle/"+href, rel='stylesheet', type='text/css')
+//- mixin lnkTypeCss(href)
+//- 	link(href="CStyle/"+href, rel='stylesheet', type='text/css')  
+	
+mixin lnkScripTop(href)
+	script(src="Web/js/"+href, type='text/javascript')
+mixin lnkScripEnd(href)
+	script(src="Web/js/"+href, type='text/javascript')
+
+//- https://pugjs.org/language/interpolation.html
+- var name = "Mvs Fnd Fun";
+
+
