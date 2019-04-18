@@ -3,12 +3,35 @@ html(lang="tw")
 	head
 		include include/head
 		title #{name}
-		+lnkCss('common/layout.css')
+		+lnkCss('../CStyle/common/layout.css')
 	body
 		include include/mixin
 		include include/header
-		h1 this is a test
-		+lnkScripEnd('custom.js')
+		h1 Lazy loading Images
+		h5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dolore ipsa maxime, doloremque minus dignissimos distinctio corrupti sunt asperiores dolores? Commodi itaque repellat eum, vero fuga enim debitis in esse.
+		img.photo(src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo2.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo2.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo2.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo2.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		img.photo(data-src="../CStyle/common/imgs/photo.jpg", alt="")
+		
+		
+		+lnkScripEnd('bundle.js')
 
 
 		
